@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 
 export const fetchPostsMetaData = () => {
-  const folderPath = path.join(process.cwd(), "../posts");
+  const folderPath = path.join(process.cwd(), "./posts");
   const postsMetaData: { [key: string]: string }[] = []; 
   try {
     if (!fs.existsSync(folderPath)) {

@@ -1,0 +1,15 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "functions": {
+    "src/app/**/*.{js,ts,tsx}": {
+      "maxDuration": 10
+    }
+  },
+  "env": {
+    "DATABASE_URL": "@database_url",
+    "DB_NAME": "@db_name"
+  }
+}
